@@ -26,13 +26,26 @@ now_epoch() { date +%s; }
 iso_now()   { date "+%Y-%m-%d %H:%M:%S"; }
 
 lock_started_epoch() {
-  [[ -f "$META_FILE" ]] || { echo 0; return; }
-  awk -F= '/^start=/{print $2}' "$META_FILE" 2>/dev/null || echo 0
+  # 优先读 meta；meta 尚未写出（抢锁竞态窗口）时用锁目录 mtime 兜底，绝不返回 0
+  if [[ -f "$META_FILE" ]]; then
+    local v
+    v=$(awk -F= '/^start=/{print $2}' "$META_FILE" < /dev/null 2>/dev/null)
+    if [[ -n "$v" && "$v" != "0" ]]; then
+      echo "$v"
+      return
+    fi
+  fi
+  stat -f %m "$LOCK_DIR" 2>/dev/null || echo 0
+}
+
+lock_at() {
+  [[ -f "$META_FILE" ]] || { echo "-"; return; }
+  awk -F= '/^at=/{print $2}' "$META_FILE" < /dev/null 2>/dev/null || echo "-"
 }
 
 lock_pid() {
   [[ -f "$META_FILE" ]] || { echo "?"; return; }
-  awk -F= '/^pid=/{print $2}' "$META_FILE" 2>/dev/null || echo "?"
+  awk -F= '/^pid=/{print $2}' "$META_FILE" < /dev/null 2>/dev/null || echo "?"
 }
 
 do_acquire() {
@@ -46,12 +59,13 @@ do_acquire() {
     return 0
   fi
 
-  # 锁已存在：判断是否僵尸
+  # 锁已存在：先给持锁者一点时间写完 meta（抢锁竞态窗口），再判断是否僵尸
+  sleep 0.3
   local started age pid
   started=$(lock_started_epoch)
   pid=$(lock_pid)
   age=$(( $(now_epoch) - ${started:-0} ))
-  if [[ "${started:-0}" -eq 0 || $age -gt $TTL_SEC ]]; then
+  if [[ $age -gt $TTL_SEC ]]; then
     echo "STALE_LOCK 回收僵尸锁（pid=$pid，已 ${age}s 未释放）"
     rm -rf "$LOCK_DIR"
     if mkdir "$LOCK_DIR" 2>/dev/null; then
@@ -60,7 +74,7 @@ do_acquire() {
       return 0
     fi
   fi
-  echo "LOCKED 已有执行在跑：pid=$pid，开始于 $([[ -f "$META_FILE" ]] && awk -F= '/^at=/{print $2}' "$META_FILE")，已 ${age}s"
+  echo "LOCKED 已有执行在跑：pid=$pid，开始于 $(lock_at)，已 ${age}s"
   return 1
 }
 
@@ -120,7 +134,7 @@ PY
     if [[ -d "$LOCK_DIR" ]]; then
       started=$(lock_started_epoch)
       age=$(( $(now_epoch) - ${started:-0} ))
-      echo "LOCKED pid=$(lock_pid) at=$([[ -f "$META_FILE" ]] && awk -F= '/^at=/{print $2}') 已 ${age}s（TTL ${TTL_SEC}s）"
+      echo "LOCKED pid=$(lock_pid) at=$(lock_at) 已 ${age}s（TTL ${TTL_SEC}s）"
     else
       echo "FREE 当前无锁"
     fi

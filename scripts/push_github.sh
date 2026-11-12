@@ -53,6 +53,8 @@ if [[ -f "data/${DATE_STR}.json" ]]; then
 fi
 
 git add data assets build.py README.md scripts .gitignore index.html legacy 2>/dev/null || true
+# Wizshot 素材含人像/人声，只用于站点发布，绝不提交到公开仓库（防 git add -A 误加）
+git reset -q -- wizshot-assets 2>/dev/null || true
 MSG="${1:-chore: 晨报数据更新 $(date +%Y-%m-%d)}"
 if git diff --cached --quiet; then
   echo "没有变更需要提交"

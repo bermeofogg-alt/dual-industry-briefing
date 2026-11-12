@@ -3,10 +3,17 @@
 .wbapp_*.genie
 .DS_Store
 *.log
+__pycache__/
+*.pyc
 
 # 凭证类文件（即使误放在项目根目录也不会被提交）
 *.token
 *webhook*
+ernie*.json
 
 # 运行锁、数据快照与推送日志（本地私有）
 .state/
+
+# Wizshot 素材含人像/人声，放 wizshot-assets/，由 push_github.sh 显式排除。
+# 这里【不能】写 ignore 规则，否则站点发布会把素材一起跳过，千帆就抓不到 URL。
+# 请勿对该目录执行 git add -A / git add .

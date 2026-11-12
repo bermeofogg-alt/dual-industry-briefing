@@ -130,6 +130,18 @@ PY
     echo "RELEASED 强制释放完成"
     ;;
 
+  writes)
+    # 当日已成功写入（内容改写）次数；超过阈值应由自动化自行停止改写，避免同日反复重建
+    HIST="$STATE_DIR/${DATE_STR}.history"
+    if [[ -f "$HIST" ]]; then
+      N=$(wc -l < "$HIST" | tr -d ' ')
+      echo "WRITES ${N:-0}"
+      [[ "${N:-0}" -ge 3 ]] && echo "WRITE_BUDGET_EXCEEDED 当日已改写 ${N} 次（上限 3）：本轮禁止再改 data，只允许校验、发布与推送"
+    else
+      echo "WRITES 0"
+    fi
+    ;;
+
   status)
     if [[ -d "$LOCK_DIR" ]]; then
       started=$(lock_started_epoch)

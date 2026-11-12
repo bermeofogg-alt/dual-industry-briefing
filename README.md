@@ -81,12 +81,13 @@ item 字段：`brand`、`color`、`tag`、`title`、`summary`、`time`、`source
 
 凭证约定（放用户目录，不进仓库、不会被提交）：
 
-| 文件 | 内容 | 用途 |
+| 项目 | 配置 | 用途 |
 | --- | --- | --- |
-| `~/.config/dual-industry-briefing/github.token` | GitHub PAT（repo 权限） | push 认证；缺失时回退系统 git 凭证 |
+| GitHub 仓库 | `github.com/bermeofogg-alt/dual-industry-briefing`（main 分支） | 每日数据与产物备份 |
+| GitHub 认证 | GitHub CLI 设备授权（`gh auth login`），git credential helper 已配置 | push 认证，无需手工管理 PAT |
 | `~/.config/dual-industry-briefing/feishu.webhook` | 飞书群机器人 webhook 地址 | 群消息推送 |
 
 网络：git 已配置走本机 Clash 代理 `http://127.0.0.1:7890`（GitHub 直连不稳定）。
 
-每日自动化的流程已从「检索→写数据→渲染→发布」扩展为「检索→写数据→渲染→发布→push GitHub→飞书推送」，凭证到位后生效。
+每日自动化的流程已从「检索→写数据→渲染→发布」扩展为「检索→写数据→渲染→发布→push GitHub→飞书推送」，飞书 webhook 到位后生效。
 

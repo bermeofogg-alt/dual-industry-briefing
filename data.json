@@ -1,0 +1,528 @@
+{
+  "HOME_DATA": [
+    {
+      "brand": "无印良品",
+      "section": "新品上市",
+      "title": "MUJI 2026 秋冬居家織品系列",
+      "summary": "推出絎縫與法蘭絨織品系列，含薄被/蓋毯/抱枕套，9-10月陸續上市。",
+      "source": "MUJI Taiwan",
+      "date": "2026年9-10月",
+      "url": "https://www.muji.tw/muji-journal/news/news/260910.html",
+      "num": "1"
+    },
+    {
+      "brand": "全棉时代",
+      "section": "新品上市",
+      "title": "全棉時代×與輝同行 雲葉棉紗衛生巾",
+      "summary": "10月聯合「與輝同行」推定制衛生巾及安睡褲，首發即登直播銷售良好。",
+      "source": "稳健医疗/搜狐",
+      "date": "2026年10月",
+      "url": "https://m.sohu.com/a/1088500544_114984",
+      "num": "2"
+    },
+    {
+      "brand": "松山棉店",
+      "section": "新品上市",
+      "title": "松山棉店 小暖羊保暖系列升級",
+      "summary": "9/22發布小暖羊保暖打底褲升級，17.5微米美利奴羊毛，累售300萬+條。",
+      "source": "中国经济新闻网",
+      "date": "2026年9月22日",
+      "url": "https://www.cet.com.cn/zhpd/zxsdv2/10585191.shtml",
+      "num": "3"
+    },
+    {
+      "brand": "艾美家",
+      "section": "新品上市",
+      "title": "艾美家 2026 新款全棉床品套件",
+      "summary": "推出蕾絲/水洗棉/磨毛夾棉床裙三四件套，覆蓋多花色床品套件矩陣。",
+      "source": "找家纺网",
+      "date": "2026年",
+      "url": "https://www.zhaojiafang.com/shop/index.php?act=show_store&op=goods_all&store_id=18685&time=",
+      "num": "4"
+    },
+    {
+      "brand": "季米",
+      "section": "新品上市",
+      "title": "季米家居 秋冬四件套上新（買一贈一）",
+      "summary": "全棉/噴氣/浮雕提花/生態棉絨四件套上線，199-299元價格帶主打性價比。",
+      "source": "季米官方微信",
+      "date": "2026年秋冬",
+      "url": "http://mp.weixin.qq.com/s?__biz=MzIxMDI0ODg3OA==&mid=2649546698&idx=4&sn=5320d0a7c9162e97a184691ed080d924&chksm=8e2fed4edcfd850e7eb658b06bb48f6303561426a9eb4448f4809e8746ec7057f8d24cc350c6#rd",
+      "num": "5"
+    },
+    {
+      "brand": "水星家纺",
+      "section": "新品上市",
+      "title": "水星家紡 氣絨蓬暖被 3.0",
+      "summary": "CLIMORA氣絨系統+三項專利可機洗，15分升溫5.6℃、90分升12℃。",
+      "source": "水星家纺",
+      "date": "2026年",
+      "url": "https://www.shuixing.com/ketangs/2949.html",
+      "num": "6"
+    },
+    {
+      "brand": "水星家纺",
+      "section": "新品上市",
+      "title": "水星家紡 御·小杏福 非遺剪紙床品",
+      "summary": "攜手非遺剪紙（金壇刻紙）推御·小杏福系列，AB版60S長絨棉緞紋三色。",
+      "source": "水星家纺",
+      "date": "2026年9月30日",
+      "url": "https://shuixing.com/ketangs/",
+      "num": "7"
+    },
+    {
+      "brand": "水星家纺",
+      "section": "新品上市",
+      "title": "水星家紡 2026 秋冬產品結構",
+      "summary": "雪糕/閃睡家族/牛皮席系列，融入石墨烯導電絲與茶氨酸植萃抗菌科技。",
+      "source": "水星家纺官网",
+      "date": "2026年",
+      "url": "http://www.shuixing.com.cn/",
+      "num": "8"
+    },
+    {
+      "brand": "全棉时代",
+      "section": "渠道与门店",
+      "title": "全棉時代 廣州白鵝潭旗艦店開業",
+      "summary": "9/30廣州白鵝潭萬象城店開業；同期官宣趙今麥為奈絲公主品牌代言人。",
+      "source": "新华财经/稳健医疗",
+      "date": "2026年9-10月",
+      "url": "https://www.cnfin.com/announ/detail/index.html?dannoun=lcdetail&id=845718435433",
+      "num": "12"
+    },
+    {
+      "brand": "松山棉店",
+      "section": "渠道与门店",
+      "title": "松山棉店 董潔代言+全國拓店",
+      "summary": "9/22官宣董潔出任品牌代言人；上半年蘇州/上海/北京/瀋陽等多城新店落地。",
+      "source": "中国经济新闻网/中国日报",
+      "date": "2026年9月22日",
+      "url": "https://www.cet.com.cn/zhpd/zxsdv2/10585191.shtml",
+      "num": "13"
+    },
+    {
+      "brand": "水星家紡",
+      "section": "品牌战略与动态",
+      "title": "水星家紡 王濛代言「穩躺贏」快閃",
+      "summary": "代言人王濛空降快閃解鎖睡眠密碼，展示睡眠密碼系列核心產品矩陣。",
+      "source": "水星家纺",
+      "date": "2026年",
+      "url": "https://shuixing.com/news/2800.html",
+      "num": "9"
+    },
+    {
+      "brand": "水星家紡",
+      "section": "品牌战略与动态",
+      "title": "水星家紡 攜手君智戰略諮詢",
+      "summary": "與君智戰略合作，系統塑造專業創新引領增長路徑，提振經銷商信心。",
+      "source": "水星家纺官网",
+      "date": "2026年",
+      "url": "http://www.shuixing.com.cn/",
+      "num": "10"
+    },
+    {
+      "brand": "无印良品",
+      "section": "品牌战略与动态",
+      "title": "MUJI 2026 秋冬商品展示會",
+      "summary": "舉辦秋冬商品展示會，集中展示法蘭絨床品與雙層紗織家居服等新品。",
+      "source": "GRAZIA中文网",
+      "date": "2026年",
+      "url": "https://chinagrazia.com/article/186497.html",
+      "num": "11"
+    },
+    {
+      "brand": "无印良品",
+      "section": "内容声量",
+      "title": "MUJI 風衣 9月小紅書刷屏「Lemaire平替」",
+      "summary": "今秋立領風衣小紅書高熱筆記密集，被喊「Lemaire平替」，討論與爭議齊飛。",
+      "source": "什么值得买/小红书",
+      "date": "2026年9月",
+      "url": "https://post.smzdm.com/p/aggqrgm7/",
+      "num": "14"
+    },
+    {
+      "brand": "水星家紡",
+      "section": "内容声量",
+      "title": "水星「穩躺贏」體驗展 100+達人探店種草",
+      "summary": "上海互動體驗展超100位達人探店，小紅書/抖音種草聯動線下門店打卡。",
+      "source": "水星家纺官网",
+      "date": "2026年9月",
+      "url": "http://www.shuixing.com.cn/news_2",
+      "num": "15"
+    },
+    {
+      "brand": "松山棉店",
+      "section": "内容声量",
+      "title": "松山棉店 秋季家居服新浪#穿搭指南#推廣",
+      "summary": "新浪#穿搭指南#推秋季家居服；全國已開360+門店，線上種草帶動線下。",
+      "source": "新浪/买购网",
+      "date": "2026年",
+      "url": "https://www.sina.cn/news/detail/5340104588788379.html",
+      "num": "16"
+    },
+    {
+      "brand": "季米",
+      "section": "内容声量",
+      "title": "季米 小紅書/ins 輕奢種草 原創設計",
+      "summary": "主打法式簡約、ins輕奢原創花色，小眾不撞款，年輕租房改造群體種草。",
+      "source": "敬慕百科/hqwc",
+      "date": "2026年",
+      "url": "http://www.hqwc.cn/a/1263312.html",
+      "num": "17"
+    },
+    {
+      "brand": "奥莱渠道",
+      "section": "行业研究",
+      "title": "信達證券 家紡行業景氣度報告",
+      "summary": "1-2月抖音銷售羅萊+51%/水星+6%/富安娜+224%；奧萊模式釋放彈性。",
+      "source": "发现报告/信达证券",
+      "date": "2026年",
+      "url": "http://fxbaogao.com/detail/5283819",
+      "num": "18"
+    },
+    {
+      "brand": "奥莱渠道",
+      "section": "行业研究",
+      "title": "人民日報 聚焦南通家紡新質躍遷",
+      "summary": "報道南通家紡以涼感/冰絲科技產品創新供給，傳統產業煥新升級。",
+      "source": "中国纺织工业联合会",
+      "date": "2026年8月13日",
+      "url": "https://cntac.org.cn/zixun/hangye/202608/t20260819_4419927.html",
+      "num": "19"
+    },
+    {
+      "brand": "奥莱渠道",
+      "section": "行业研究",
+      "title": "家紡奧萊渠道成增長主力",
+      "summary": "羅萊/水星加速佈局購物中心與奥特萊斯，奧萊店型成直營增長主力。",
+      "source": "同花顺/中财网",
+      "date": "2026年8月26日",
+      "url": "https://basic.10jqka.com.cn/144/002327/worth.html",
+      "num": "20"
+    },
+    {
+      "brand": "季米",
+      "section": "行业研究",
+      "title": "季米家紡 九大四件套系列詳解",
+      "summary": "選購指南重點詳寫季米，299-1299元價格帶覆蓋全屋床品九大系列。",
+      "source": "凤凰网山东",
+      "date": "2026年",
+      "url": "https://sd.ifeng.com/c/8tIpxOPuZvS",
+      "num": "21"
+    },
+    {
+      "brand": "季米",
+      "section": "行业研究",
+      "title": "2026 四件套測評排行 季米居 TOP1",
+      "summary": "橫向實測6大家紡品牌，季米憑多元面料體系與全線A類標準登頂。",
+      "source": "第一纺织网",
+      "date": "2026年",
+      "url": "http://quota.webtex.cn/info/info_view.asp?Infoid=735064",
+      "num": "22"
+    }
+  ],
+  "RETAIL_DATA": [
+    {
+      "brand": "奥乐齐",
+      "section": "品牌战略与动态",
+      "title": "奥乐齐年底冲150店，CEO陈佳首度受访",
+      "summary": "年底门店将达150家；CEO陈佳首度受访，称自有品牌占比90%是商业模式内核。",
+      "source": "中国零售业博览会/今日头条",
+      "date": "2026年11月",
+      "url": "https://www.toutiao.com/article/7703415697778442788",
+      "num": "28"
+    },
+    {
+      "brand": "胖东来",
+      "section": "品牌战略与动态",
+      "title": "胖东来前8月卖195亿，却关年利超1亿老店",
+      "summary": "14家店前8月销售195亿同比+27%；主动关闭年利超1亿、经营24年的生活广场老店。",
+      "source": "东方快消品中心/今日头条",
+      "date": "2026年9月",
+      "url": "https://www.toutiao.com/article/7680878336951845418/",
+      "num": "29"
+    },
+    {
+      "brand": "山姆",
+      "section": "品牌战略与动态",
+      "title": "山姆2026财年销售破1400亿，贡献沃尔玛中国超80%",
+      "summary": "2026财年全渠道销售破1400亿，贡献沃尔玛中国超80%营收；付费会员破1070万。",
+      "source": "正观新闻",
+      "date": "2026年7月",
+      "url": "https://www.zhengguannews.cn/zghnews/420954.html",
+      "num": "30"
+    },
+    {
+      "brand": "盒马",
+      "section": "品牌战略与动态",
+      "title": "盒马2026财年GMV破1070亿，设AI委员会",
+      "summary": "2026财年GMV破1070亿连续两年盈利；4月设AI委员会，选品补货定价由AI主导。",
+      "source": "百度百科/财经",
+      "date": "2026年3月",
+      "url": "https://baike.baidu.com/item/%E7%9B%92%E9%A9%AC/68625265",
+      "num": "31"
+    },
+    {
+      "brand": "名创优品",
+      "section": "品牌战略与动态",
+      "title": "名创优品26Q3内地GMV+25%~30%，YOYO前9月破10亿",
+      "summary": "26Q3内地GMV同比+25%~30%；自有IP YOYO前9月GMV破10亿进全球十亿俱乐部。",
+      "source": "MINISO IR/搜狐",
+      "date": "2026年10月",
+      "url": "https://ir-tc.miniso.com/2026-10-09-MINISO-Groups-Latest-Business-Update",
+      "num": "32"
+    },
+    {
+      "brand": "优衣库",
+      "section": "品牌战略与动态",
+      "title": "优衣库大中华区收益7240亿日元+11.3%，净关74店",
+      "summary": "大中华区收益7240亿日元+11.3%；中国大陆门店净关74家至852家，利润反增。",
+      "source": "证券时报",
+      "date": "2026年10月",
+      "url": "https://www.stcn.com/article/detail/4225007.html",
+      "num": "33"
+    },
+    {
+      "brand": "奥乐齐",
+      "section": "渠道与门店",
+      "title": "奥乐齐11月进安徽、2027年1月落杭州",
+      "summary": "11月以6店同开进驻安徽，2027年1月落杭州；南京物流中心启用加密华东供应链。",
+      "source": "今日头条",
+      "date": "2026年10月",
+      "url": "https://www.toutiao.com/article/7703415697778442788",
+      "num": "34"
+    },
+    {
+      "brand": "胖东来",
+      "section": "渠道与门店",
+      "title": "胖东来科技广场店在建，梦之城/郑州店筹备",
+      "summary": "科技广场店在建（约5万㎡）承接老店员工平移；梦之城、郑州店筹备，暂停对外帮扶。",
+      "source": "大象网",
+      "date": "2026年10月",
+      "url": "https://www.hntv.tv/50rd/article/1/2113110432017408001?from=dxlist",
+      "num": "35"
+    },
+    {
+      "brand": "山姆",
+      "section": "渠道与门店",
+      "title": "山姆2026计划新开13家冲百店，严打黄牛",
+      "summary": "2026计划新开13家冲百店；修改会员章程，同实名一年仅绑两次亲友卡打击黄牛。",
+      "source": "今日头条",
+      "date": "2026年10月",
+      "url": "https://m.toutiao.com/article/7694584673704264218",
+      "num": "36"
+    },
+    {
+      "brand": "盒马",
+      "section": "渠道与门店",
+      "title": "盒马超盒算NB一年新开约200家进33城",
+      "summary": "平价硬折扣超盒算NB一年新开约200家进33城；简阳双业态（折扣+前置仓）开业。",
+      "source": "财经/今日头条",
+      "date": "2026年10月",
+      "url": "https://news.caijingmobile.com/article/detail/586559",
+      "num": "37"
+    },
+    {
+      "brand": "名创优品",
+      "section": "渠道与门店",
+      "title": "名创优品海外SUPER MINISO / MINISO LAND落地",
+      "summary": "10月加拿大首间海外SUPER MINISO、美国首间MINISO LAND相继开业，IP大店加速出海。",
+      "source": "MINISO 品牌新闻",
+      "date": "2026年10月",
+      "url": "https://resmaworoningrum@miniso.com/brand/news_206.html",
+      "num": "38"
+    },
+    {
+      "brand": "优衣库",
+      "section": "渠道与门店",
+      "title": "优衣库中国关低效开旗舰，转向个店经营",
+      "summary": "中国净关74家低效店，转开一线及省会旗舰店；推行“个店经营”打磨单店效益。",
+      "source": "界面新闻",
+      "date": "2026年8月",
+      "url": "https://www.toutiao.com/article/7694970914345091620/",
+      "num": "39"
+    },
+    {
+      "brand": "奥乐齐",
+      "section": "新品上市",
+      "title": "奥乐齐鱼子精华“奥家特卖”魔性主题曲病毒传播",
+      "summary": "LACURA鱼子精华“奥家特卖”配《ALDI WOW》主题曲，社媒曝光723万+引爆声量。",
+      "source": "广告门",
+      "date": "2026年",
+      "url": "https://m.adquan.com/detail/7-363421",
+      "num": "23"
+    },
+    {
+      "brand": "胖东来",
+      "section": "新品上市",
+      "title": "胖东来网红大月饼转线上限购自提",
+      "summary": "网红大月饼转线上同城限购+到店自提，会员码每分钟刷新防代购囤货。",
+      "source": "焦作广播电视台/今日头条",
+      "date": "2026年9月",
+      "url": "https://www.toutiao.com/article/7684817566853841442/",
+      "num": "24"
+    },
+    {
+      "brand": "名创优品",
+      "section": "新品上市",
+      "title": "名创优品毛绒节田曦薇代言“甜品厨房”",
+      "summary": "毛绒节官宣田曦薇代言“甜品厨房”；抖音峰值2.5万人在线，微博话题阅读4.7亿。",
+      "source": "联商网",
+      "date": "2026年10月",
+      "url": "http://www.linkshop.cn/news/2026553163.shtml",
+      "num": "25"
+    },
+    {
+      "brand": "优衣库",
+      "section": "新品上市",
+      "title": "优衣库双联名：JWA × F.RISSO 秋冬发售",
+      "summary": "秋冬双联名：JW Anderson 10/16发售，前Marni总监Risso针织系列10/30发售。",
+      "source": "今日头条",
+      "date": "2026年10月",
+      "url": "https://m.toutiao.com/article/7699042923342299683",
+      "num": "26"
+    },
+    {
+      "brand": "盒马",
+      "section": "新品上市",
+      "title": "盒马抹茶椰椰高钾水登新品榜+回购榜双第一",
+      "summary": "抹茶椰椰高钾水上线半月登水饮新品榜+回购榜双第一，小红书抖音刷屏成爆款。",
+      "source": "网易/每日食品",
+      "date": "2026年10月",
+      "url": "https://www.163.com/dy/article/LAD4Q0MK0514HDQI.html",
+      "num": "27"
+    },
+    {
+      "brand": "奥乐齐",
+      "section": "内容声量",
+      "title": "奥乐齐小红书“大牌平替”、抖音探店成话题",
+      "summary": "小红书“大牌平替”、抖音探店开箱成消费话题，从折扣超市变“网红超市”。",
+      "source": "搜狐新闻",
+      "date": "2026年9月",
+      "url": "https://news.sohu.com/a/1076693603_115479",
+      "num": "40"
+    },
+    {
+      "brand": "胖东来",
+      "section": "内容声量",
+      "title": "胖东来国庆400万人挤进，抖音榜零直播进前十",
+      "summary": "国庆400万人挤进称“不挂牌6A景区”；抖音小店榜零直播进前十，品牌溢出型增长。",
+      "source": "大数跨境/蝉妈妈",
+      "date": "2026年10月",
+      "url": "https://www.10100.com/article/152902208",
+      "num": "41"
+    },
+    {
+      "brand": "山姆",
+      "section": "内容声量",
+      "title": "山姆县城“分姆”代购抖音小红书疯传",
+      "summary": "县城“分姆”代购集合店抖音小红书疯传，单条采购视频播放超百万引创业潮。",
+      "source": "新食界/今日头条",
+      "date": "2026年",
+      "url": "https://m.toutiao.com/article/7683851067435614783",
+      "num": "42"
+    },
+    {
+      "brand": "名创优品",
+      "section": "内容声量",
+      "title": "名创优品YOYO“举万物”UGC，小玉从小红书走红",
+      "summary": "YOYO“举万物”小红书UGC裂变；素人IP小玉从小红书走红，国庆上海老洋房排队。",
+      "source": "搜狐/DT商业观察",
+      "date": "2026年",
+      "url": "https://m.sohu.com/a/1087497688_100024718",
+      "num": "43"
+    },
+    {
+      "brand": "优衣库",
+      "section": "内容声量",
+      "title": "优衣库“平替”浏览破亿，JWA货号单蹲点刷屏",
+      "summary": "“优衣库平替”社交平台浏览破亿；JWA联名货号单蹲点、廓形神裤小红书刷屏。",
+      "source": "腾讯财经/什么值得买",
+      "date": "2026年10月",
+      "url": "https://gu.qq.com/resources/shy/news/detail-v2/index.html?id=SN202610211645589540ba6e",
+      "num": "44"
+    },
+    {
+      "brand": "盒马",
+      "section": "内容声量",
+      "title": "盒马“8毛虾”登上海热搜TOP2，油烟换海鲜抖音4226万",
+      "summary": "“8毛虾”省心价登上海同城热搜TOP2阅读1.6亿；老板电器“油烟换海鲜”抖音4226万。",
+      "source": "广告门",
+      "date": "2026年",
+      "url": "https://m.adquan.com/detail/7-363927",
+      "num": "45"
+    },
+    {
+      "brand": "奥乐齐",
+      "section": "行业研究",
+      "title": "硬折扣三强混战：盒马领跑、奥乐齐提速、快乐猴猛追",
+      "summary": "硬折扣三强混战：盒马超盒算NB领跑、奥乐齐提速、美团快乐猴猛追，10元成价格锚点。",
+      "source": "联商网",
+      "date": "2026年10月",
+      "url": "https://www.linkshop.com/news/2026553617.shtml",
+      "num": "46"
+    },
+    {
+      "brand": "山姆",
+      "section": "行业研究",
+      "title": "会员制经济分化：山姆守价值，胖东来成样本",
+      "summary": "会员制经济分化：山姆高速扩张守会员价值；胖东来不卷价格卷服务成价值回归样本。",
+      "source": "央广网",
+      "date": "2026年11月",
+      "url": "https://www.cnr.cn/mspd/jrhm/20261102/t20261102_527859837.shtml",
+      "num": "47"
+    },
+    {
+      "brand": "盒马",
+      "section": "行业研究",
+      "title": "内容种草驱动零售，抖音小红书成第一推手",
+      "summary": "内容种草改写零售：抖音/小红书成县域创业与爆品孵化第一推手，UGC闭环主导选品。",
+      "source": "今日头条/行业媒体",
+      "date": "2026年",
+      "url": "https://m.toutiao.com/article/7696343010199470628",
+      "num": "48"
+    }
+  ],
+  "QUOTES": [
+    {
+      "text": "胖东来前8月卖195亿，却主动关停年利过亿的老店——它算的不是坪效，是「幸福账」。",
+      "source": "据 东方快消品中心 报道提炼"
+    },
+    {
+      "text": "山姆2026财年破1400亿、付费会员破1070万，会员制经济的护城河，仍是「信任」二字。",
+      "source": "据 正观新闻 报道提炼"
+    },
+    {
+      "text": "盒马GMV破1070亿、设立AI委员会，零售下一战，是算法替你选品。",
+      "source": "据 财经报道 提炼"
+    },
+    {
+      "text": "奥乐齐自有品牌占90%才敢打硬折扣，折扣战的本质，是供应链。",
+      "source": "据 中国零售业博览会 报道提炼"
+    },
+    {
+      "text": "优衣库大中华区收益+11.3%却净关74店，关低效、开旗舰，是「个店经营」的转向。",
+      "source": "据 证券时报 报道提炼"
+    },
+    {
+      "text": "名创优品自有IP YOYO前9月破10亿，IP大店出海，成新增长极。",
+      "source": "据 MINISO IR 业务更新 提炼"
+    },
+    {
+      "text": "家纺奥莱渠道成直营增长主力，罗莱、水星加速围猎购物中心的折扣流量。",
+      "source": "据 同花顺/中财网 研报 提炼"
+    },
+    {
+      "text": "水星家纺前三季扣非利润+6.62%，科技被芯把「材质叙事」升级成「睡眠科技叙事」。",
+      "source": "据 水星家纺 IR活动记录 提炼"
+    },
+    {
+      "text": "内容种草改写零售，抖音、小红书成县域创业与爆品孵化第一推手。",
+      "source": "据 行业媒体 报道 提炼"
+    },
+    {
+      "text": "硬折扣三强混战，10元成价格锚点，性价比回归主流消费的C位。",
+      "source": "据 联商网 报道 提炼"
+    }
+  ]
+}

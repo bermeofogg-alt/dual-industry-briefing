@@ -2,7 +2,6 @@
 .workbuddy/
 .wbapp_*.genie
 .DS_Store
-index.html
 *.log
 
 # 凭证类文件（即使误放在项目根目录也不会被提交）

@@ -66,3 +66,27 @@ item 字段：`brand`、`color`、`tag`、`title`、`summary`、`time`、`source
 
 1. 拷贝整个项目目录；
 2. 重建定时任务（每天 06:30），prompt 里写明：检索品牌清单 → 写 `data/<日期>.json` → `python3 build.py` → 发布 → 输出链接 + 文字摘要。
+
+## GitHub 同步与飞书推送（2026-11-12 于 Mac 重建）
+
+原 Windows 端的凭证与配置未随迁移带来，已在 Mac 端重建流程骨架：
+
+```bash
+# 1) 推送 GitHub（首次需先在 github.com/jiangjuji 下创建空仓库 dual-industry-briefing）
+./scripts/push_github.sh
+
+# 2) 推送飞书群
+./scripts/notify_feishu.sh "家纺&零售每日晨报 11-12" "家纺精选：… 零售精选：…" "https://…app.workbuddy.host/…"
+```
+
+凭证约定（放用户目录，不进仓库、不会被提交）：
+
+| 文件 | 内容 | 用途 |
+| --- | --- | --- |
+| `~/.config/dual-industry-briefing/github.token` | GitHub PAT（repo 权限） | push 认证；缺失时回退系统 git 凭证 |
+| `~/.config/dual-industry-briefing/feishu.webhook` | 飞书群机器人 webhook 地址 | 群消息推送 |
+
+网络：git 已配置走本机 Clash 代理 `http://127.0.0.1:7890`（GitHub 直连不稳定）。
+
+每日自动化的流程已从「检索→写数据→渲染→发布」扩展为「检索→写数据→渲染→发布→push GitHub→飞书推送」，凭证到位后生效。
+

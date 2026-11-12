@@ -3,6 +3,7 @@
 # 用法: ./scripts/push_github.sh "commit 说明（可选）" [日期 YYYY-MM-DD]
 # 认证: GitHub CLI（gh auth login 已完成，credential helper 已配置），不再依赖手工 PAT
 # 网络: GitHub 直连不稳定，走本机 Clash 代理 127.0.0.1:7890
+# 并发: 自带文件锁（.state/git.lock，TTL 600s）；推送前先 rebase，避免并发导致 non-fast-forward
 
 set -e
 PROJ_DIR="/Users/jiangjuji/WorkBuddy/dual-industry-briefing"
@@ -11,6 +12,24 @@ PROXY="http://127.0.0.1:7890"
 export PATH="$HOME/.local/bin:$PATH"
 
 cd "$PROJ_DIR"
+mkdir -p .state
+
+# 0) 文件锁：同一时刻只允许一个推送流程
+GIT_LOCK=".state/git.lock"
+GIT_LOCK_TTL=600
+if ! mkdir "$GIT_LOCK" 2>/dev/null; then
+  LOCK_MTIME=$(stat -f %m "$GIT_LOCK" 2>/dev/null || date +%s)
+  AGE=$(( $(date +%s) - LOCK_MTIME ))
+  if [[ $AGE -gt $GIT_LOCK_TTL ]]; then
+    echo "⚠️  回收僵尸推送锁（已 ${AGE}s）"
+    rm -rf "$GIT_LOCK"
+    mkdir "$GIT_LOCK"
+  else
+    echo "❌ 另一个推送流程正在执行（锁已持有 ${AGE}s），本次跳过，避免并发写入"
+    exit 1
+  fi
+fi
+trap 'rm -rf "$PROJ_DIR/$GIT_LOCK"' EXIT INT TERM
 
 # 1) 初始化 / 远程配置
 [[ -d .git ]] || git init -b main
@@ -41,7 +60,29 @@ else
   git commit -m "$MSG" >/dev/null
 fi
 
-# 4) 推送
+# 4) 先同步远端再推（并发执行时避免 non-fast-forward）
 BRANCH=$(git rev-parse --abbrev-ref HEAD)
-git push -u origin "$BRANCH" 2>&1 | tail -2
-echo "✅ 已推送到 $REMOTE_REPO"
+set +e
+git -c core.hooksPath=/dev/null pull --rebase --autostash origin "$BRANCH" >/dev/null 2>&1
+REBASE_RC=$?
+[[ $REBASE_RC -ne 0 ]] && echo "⚠️  远端同步跳过（无更新或无跟踪分支）"
+
+git push -u origin "$BRANCH" > /tmp/gh_push_out.txt 2>&1
+PUSH_RC=$?
+tail -2 /tmp/gh_push_out.txt
+
+if [[ $PUSH_RC -ne 0 ]]; then
+  echo "⚠️  首次推送失败，rebase 后重试一次"
+  git pull --rebase --autostash origin "$BRANCH" >/dev/null 2>&1
+  git push -u origin "$BRANCH" > /tmp/gh_push_out.txt 2>&1
+  PUSH_RC=$?
+  tail -2 /tmp/gh_push_out.txt
+fi
+set -e
+
+if [[ $PUSH_RC -eq 0 ]]; then
+  echo "✅ 已推送到 $REMOTE_REPO"
+else
+  echo "❌ 推送失败，详情见上方输出（不自动重试第二次）"
+  exit 1
+fi
